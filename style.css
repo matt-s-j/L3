@@ -2,9 +2,12 @@
     --color--accent: #4a90e2;
 }
 
+html {
+    color-scheme: dark light;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 10;
     padding: 10ch;
     font: 100%/1.5 system-ui, sans-serif;
@@ -14,8 +17,6 @@ body {
 }
 
 nav {
-    background-color: #f6f5f5;
-    color: white;
     text-align: center;
     display: flex;
     padding: .5em;
@@ -24,7 +25,6 @@ nav {
 }
 
 nav a {
-    color: #333;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
@@ -68,4 +68,14 @@ form textarea{
 form label {
     display: block;
     margin-block: 1em;
+}
+
+.color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: inline-flex;
+    gap: 1rem;
+    font-family: inherit;
+    font-size: 80%;
 }
